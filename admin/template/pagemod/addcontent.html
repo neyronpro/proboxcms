@@ -1,0 +1,17 @@
+%addname%:<br />
+<div class="cont-headbox">
+<form name="content" action="%link%" method="POST">
+<div><input type="hidden" name="id" value="%id%" ></div>
+<div><input type="hidden" name="module" value="%mod%" ></div> 
+<table class="patablebox">
+ <tr><td>Название:</td><td><input type="text" name="name"  value="%name%"></td></tr>
+ <tr class="even"><td>Альтернативное название:</td><td><input type="text"  name="altname" value="%altname%"></td></tr>
+  <tr><td>Автор</td><td><input type="text"  name="author" value="%author%" maxlength="30"></td></tr>
+ <tr><td>Описание(description):</td><td><input type="text"  name="description" value="%description%" maxlength="180"></td></tr>
+ <tr class="even"><td>Ключевые слова(keywords):</td><td><input type="text" name="keywords" value="%keywords%"></td></tr>
+ <tr><td colspan="2">&nbsp;<br />Полное содержание:<br />&nbsp;<textarea  name="fullcont"  >%fullcont%</textarea></td></tr>
+</table>
+
+<input class="pabut" type="submit" name="%but_action%" value="%butval%">
+</form>
+</div>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Главная</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="../jquery/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jq-script.js"></script>
+<!-- The below script Makes IE understand the new html5 tags are there and applies our CSS to it -->
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link href="template/css/style.css" rel="stylesheet" media="all">
+<script type="text/javascript" src="../editors/tinymce/tinymce.min.js"></script>
+<script type="text/javascript">
+tinymce.init({
+        selector: "textarea",
+		language : 'ru',
+        plugins: [
+                "advlist autolink autosave link image lists charmap print preview hr anchor pagebreak spellchecker",
+                "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking",
+                "table contextmenu directionality emoticons textcolor paste textcolor moxiemanager bbcode"
+        ],
+
+        toolbar1: "fullpage | bold italic underline strikethrough | alignleft aligncenter alignright alignjustify | styleselect formatselect fontselect fontsizeselect",
+        toolbar2: "cut copy paste | searchreplace | bullist numlist | outdent indent blockquote | undo redo | link unlink anchor image media code | inserttime preview | forecolor backcolor",
+        toolbar3: "table | hr removeformat | subscript superscript | insertfile charmap emoticons | print fullscreen | ltr rtl | spellchecker | visualchars visualblocks nonbreaking pagebreak restoredraft",
+
+        menubar: false,
+        toolbar_items_size: 'small',
+		
+        style_formats: [
+                {title: 'Bold text', inline: 'b'},
+                {title: 'Red text', inline: 'span', styles: {color: '#ff0000'}},
+                {title: 'Red header', block: 'h1', styles: {color: '#ff0000'}},
+                {title: 'Example 1', inline: 'span', classes: 'example1'},
+                {title: 'Example 2', inline: 'span', classes: 'example2'},
+                {title: 'Table styles'},
+                {title: 'Table row 1', selector: 'tr', classes: 'tablerow1'}
+        ],
+
+        forced_root_block : false,
+		force_br_newlines : true,
+		force_p_newlines : false,
+		image_advtab: true
+});</script>
+</head>
+<body>
+
+<!--headbox-->
+<div class="headbox glbox">
+  <div class="logo"><img alt="" src="template/images/proboxcms-logo2.png"></div>
+  <div class="hotheadbox">
+  
+   <div class="hhbox-blok1">
+    <p>Адрес сайта: <a href="http://teplovod-komplekt.ru/" target="_blank">teplovod-komplekt.ru</a></p>
+    <p>Системные сообщения: <a href="#">0</a></p>
+    <p><a href="#">Главная</a>&nbsp;&raquo;</p>
+   </div>
+   
+   <div class="hhbox-blok2">
+    <p>Справочник системы <a href="#">PROBOXHelp</a></p>
+    <p>Написать в <a href="#">тех.поддержку</a></p>
+   </div>
+   
+   <div class="hhbox-blok3">
+    <p>Пользователь: <a href="#">%userlogin%</a></p>
+    <p>Группа: <span>%groupname%</span></p>
+    <p><a href="#">Выход из системы</a></p>
+   </div>
+   
+  </div>
+</div>
+<!--/headbox-->
+
+<!--bodybox-->
+<div class="bodybox">
+ <!--leftbox-->
+ <div class="leftbox">
+  
+  <!--modlist-->
+   <div class="modlist glbox">
+    <div class="box-title">Установленные модули</div>
+    <div class="modlist-active glbox">
+     <div class="modlist-linkmod">
+      <a href="index.php?do=shop"><p>&raquo;&nbsp;Магазин</p></a>
+      <a href="index.php?do=news"><p>&raquo;&nbsp;Новости</p></a>
+	   <a href="index.php?do=page"><p>&raquo;&nbsp;Статические страницы</p></a>
+     </div>
+    </div>
+    <div class="modlist-noactive glbox">
+     <div class="modlist-linkmod">
+      <a href="#"><p>&raquo;&nbsp;Опросы</p></a>
+      <a href="#"><p>&raquo;&nbsp;Фотогалерея</p></a>
+      <a href="#"><p>&raquo;&nbsp;Отзывы</p></a>
+      <a href="#"><p>&raquo;&nbsp;Вопрос-Ответ</p></a>
+     </div>
+    </div>
+     <div class="mlbut-active">Активные</div>
+     <div class="mlbut-noactive">Неактивные</div>
+   </div>
+  <!--/modlist-->
+  
+ </div>
+ <!--/leftbox-->
+ <!--centertbox-->
+ <div class="centerbox glbox">
+  <div class="contentbox">
+
+		%content%  
+    
+  </div>
+ </div>
+ <!--/centertbox-->
+</div>
+<!--/bodybox-->
+
+</body>
+</html>

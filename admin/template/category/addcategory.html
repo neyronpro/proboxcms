@@ -1,0 +1,38 @@
+%action% категории:<br />
+<div class="cont-headbox">
+<form name="addcat" action="%link%" method="POST">
+<div><input type="hidden" name="module" value="%mod%" ></div>
+<div><input type="hidden" name="id" value="%id%"></div>
+<table class="patablebox">
+ <tr><td>Имя:</td><td><input type="text" name="name"  value="%name%"></td></tr>
+ <tr class="even"><td>Имя на английском:</td><td><input type="text"  name="altname" value="%altname%"></td></tr>
+ <tr><td>(Meta)Описание для категории:</td><td><input type="text"  name="description" value="%description%" maxlength="180"></td></tr>
+ <tr class="even"><td>(Meta)Ключевые слова:</td><td><input type="text" name="keywords" value="%keywords%"></td></tr>
+ <tr>
+  <td>Родительская категория:</td>
+  <td>
+   <!--psevdoselect-->
+   <div class="catselectbox">
+    <input type="hidden" name="catselect" value="%parid%">
+    <div class="csbnamecatbut">Нет родительской категории</div>
+    <div class="catlist">
+     <ul><li><p id="pic0" class="catactive">Нет родительской категории</p></li></ul>
+     %cat%
+    </div>
+   </div> 
+   <!--/psevdoselect-->
+  </td>
+ </tr>
+</table>
+<input class="pabut" name="%butname%" type="submit" value="%button%">
+</form>
+</div>
+
+[catlist]
+Список категорий:<br />
+<form action="/admin/index.php?do=%mod%&link=category&go=editcat" method="POST">
+
+%cateditlist%
+
+</form>
+[/catlist]

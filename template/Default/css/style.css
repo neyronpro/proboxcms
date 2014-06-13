@@ -1,0 +1,806 @@
+/*globl set*/
+body{
+ padding:0px; margin:0px;
+ background:url("../img/mbg.jpg"); background-repeat:repeat-x;
+ font-family: Verdana;font-size:1em;color:#777;
+}
+
+.fspage{
+ font-size:85%;
+}
+
+a {
+ color:#006097;
+}
+
+a:hover{
+ color:#df0000;
+}
+
+img{
+ border:0px;
+}
+.box.message {
+border: 1px solid #F3E8A0;
+background-color: #FFFCD5;
+font-style: italic;
+font-family: Tahoma, Arial, sans-serif;
+}
+.box {
+border: #cad9e0 solid 1px;
+padding: 10px 15px;
+
+box-shadow: 0 0 3px #ececec;
+margin-bottom: 15px;
+}
+.ov-trans{
+ -webkit-transition: all.3s ease;
+ -moz-transition: all.3s ease; 
+ -o-transition: all.3s ease; 
+ -ms-transition: all.3s ease; 
+ transition: all.3s ease;
+}
+
+/*site*/
+.headbg{
+ z-index:1; position:absolute; top:0%; left:0%;
+ width:100%; height:434px;
+ background:url("../img/headbg.jpg"); background-repeat:no-repeat;background-position:50% 0%;
+}
+
+.upbox{
+ z-index:2; position:relative; margin-left:auto; margin-right:auto;
+ display:table; width:1120px; height:60px;
+ background: url("../img/upbg.jpg"); /* Для старых браузров */
+ background: linear-gradient(to top, #f2f2f2, #fefefe);
+ border-radius: 0px 0px 9px 9px;
+ box-shadow: 0px 0px 3px #999;
+}
+
+/*headphone*/
+.phone{
+ float:left; padding-top:12px; padding-left:52px; padding-right:10px;
+ border-right:1px solid #e4e4e4;
+ height:48px;
+ background:url("../img/phone.png"); background-repeat:no-repeat; background-position:7px 50%;
+}
+.phone p{
+ padding:0px; margin:0px;
+ font-weight:bold; color:#006097;
+ text-shadow:1px 1px 0px #fff;
+}
+.phone p span:first-child{
+ color:#777;
+}
+.phone p span:last-child{
+ color:#df0000;
+}
+/*~~~~~*/
+/*Address*/
+.address{
+ float:left; padding-top:12px; padding-left:10px; padding-right:10px;
+ border-left:1px solid #fff;
+ height:48px;
+}
+/*~~~~~*/
+/*Search*/
+.searchbox{
+ float:right; padding-top:16px; padding-left:10px; padding-right:10px;
+ height:44px;
+}
+/*~~~~~*/
+/*Headbox*/
+.headbox{
+ z-index:2; position:relative; margin-left:auto; margin-right:auto;
+ display:table; width:1120px; height:220px;
+}
+/*~~~~~*/
+/*Bodybox*/
+.bodybox{
+ z-index:2; position:relative; margin-left:auto; margin-right:auto;
+ display:table; width:1120px;
+ background: #fff;
+ border-radius: 9px 9px 9px 9px;
+ box-shadow: 0px 0px 3px #999;
+ font-size:82%;
+}
+/*~~~~~~*/
+/*Menubox*/
+.menubox{
+ display:table; width:100%;
+ border-bottom:1px solid #ccc;
+ background: url("../img/upbg.jpg"); /* Для старых браузров */
+ background: linear-gradient(to top, #f2f2f2, #fefefe);
+ border-radius: 9px 9px 0px 0px;
+}
+.menubox a{
+ text-decoration:none;
+}
+.menubox a p{
+ float:left; margin:0px; padding:24px; padding-top:20px; padding-bottom:10px;
+ height:24px; border-right:1px solid #ccc;border-left:1px solid #fff;
+ color:#555; text-shadow:1px 1px 0px #fff;
+}
+.menubox a:last-child p{
+ border-right:0px;
+ cursor:default;
+}
+.menubox a:first-child p{
+ border-left:0px;
+ border-radius:9px 0px 0px 0px;
+}
+.menubox a:last-child p{
+ border-right:0px;
+ border-radius:0px 9px 0px 0px;
+}
+.menubox a:hover p{
+ color:#fff; text-shadow:none;
+ background: #006097; /* Для старых браузров */
+ background: linear-gradient(to top, #004c77, #006097);
+ border-right:1px solid #004c77;border-left:1px solid #277190;
+}
+.menubox a:first-child p:hover{
+ border-right:1px solid #216784;border-left:0px;
+}
+.menubox a:last-child p:hover{
+ color:#fff; text-shadow:none;
+ background: #006097; /* Для старых браузров */
+ background: linear-gradient(to top, #004c77, #006097);
+ border-right:1px solid #004c77;border-left:0px;
+}
+/*~~~~~*/
+
+/*Contentbox*/
+.contentbox{
+ display:table;width:100%;
+}
+.leftbox{
+ float:left;width:22%;
+ border-right:1px solid #ccc; border-bottom:1px solid #ccc;
+}
+
+.conttableinfo{
+ border:0px;
+ border-spacing:1px;
+}
+.conttableinfo tr td{
+ padding:5px;
+ font-size:85%;
+ border:1px dashed #eee;
+ text-align:center;
+ cursor:default;
+}
+.conttableinfo tr td:first-child{
+ text-align:left;
+}
+.conttableinfo tr:hover td{
+ background:#ededed;
+}
+.conttableinfo tr:first-child{
+ background:#eee;
+ font-weight:bold;
+}
+/*~~~~~*/
+/*Cartbox*/
+.cartbox{
+ width:100%;
+ margin-bottom:8px;
+}
+.cartbox p:first-child{
+ margin:0px;padding:4px; padding-left:78px; padding-top:16px; padding-bottom:16px;
+ background:url("../img/cart.png"); background-repeat:no-repeat; background-position:26px 16px;
+ color:#006097;
+}
+.cartbox p:first-child span{
+ font-weight:bold; color:#df0000;
+}
+.cartbox p:last-child{
+ margin:0px; padding:7px;
+ border-top:1px solid #eee; border-bottom:1px solid #ccc; text-align:center;
+}
+/*~~~~~*/
+/*Leftblock*/
+.leftblock{
+ margin-bottom:8px;
+}
+.lbtitle{
+ padding:7px;
+ background: #006097;
+ background: linear-gradient(to top, #004c77, #006097);
+ color:#fff;
+}
+/*~~~~~*/
+/*Category*/
+.cat_tape{
+ width:100%;
+}
+.cat_tape ul{
+ list-style-type:none;
+ padding:0px;
+ margin:0px;
+}
+
+.cat_tape ul li{
+ display:block;
+ margin:0px; padding:7px; padding-left:22px;
+ border-bottom:1px solid #ccc; border-top:1px solid #eee;
+ background: url("../img/upbg.jpg"); /* Для старых браузров */
+ background: linear-gradient(to top, #ebebeb, #eee);
+}
+.cat_tape ul li:first-child{
+ display:block;
+ padding-left:12px; 
+ background: url("../img/upbg.jpg"); /* Для старых браузров */
+ background: linear-gradient(to top, #f2f2f2, #f6f6f6); 
+ border-bottom:1px solid #ccc; border-top:1px solid #fff;
+}
+.cat_tape ul:hover li{
+ background: url("../img/upbg.jpg"); /* Для старых браузров */
+ background: linear-gradient(to top, #ebebeb, #eee); 
+ border-bottom:1px solid #ccc; border-top:1px solid #eee;
+}
+
+.cat_tape a{
+ text-decoration:none;
+}
+
+
+/*~~~~~*/
+/*News*/
+.news_prev{
+ padding:8px;
+}
+.news_prev p{
+ padding:0px; margin:0px;
+ font-size:85%; text-align:justify;
+}
+.news_prev p:last-child{
+ padding:4px; margin:0px;
+ font-size:75%; text-align:right; font-weight:bold;
+ border-bottom:1px solid #ccc;
+}
+/*~~~~~*/
+
+/*contpage*/
+.contpage{
+ position:relative; float:right;
+ margin-top:5px;margin-right:10px; width:852px;
+}
+.conttitle{
+ width:100%; display:table;
+ border-bottom:1px solid #004c77;
+}
+.conttitle p{
+ float:left; margin:0px; padding: 7px 35px; 
+ background: #006097;
+ background: linear-gradient(to top, #004c77, #006097);
+ color:#fff;
+ border-radius:9px 9px 0px 0px;
+}
+.conttitle2{
+ width:100%; display:table;
+}
+.conttitle2 p{
+ float:left; margin:0px; padding: 7px 35px; 
+ background: #ddd;
+ background: linear-gradient(to top, #ddd, #dedede);
+ color:#333;
+ border-radius:0px 9px 0px 0px;
+}
+/*~~~~~*/
+/*tape products*/
+.tape-products{
+ width:100%;
+ padding:0px; margin-bottom:10px;
+ display:table;
+}
+
+.prevprobox{
+ float:left; width:200px; margin:5px;
+ border:1px solid #ccc; border-radius:5px 5px 5px 5px;
+}
+.prevprobox:hover{
+ box-shadow:0px 0px 5px #ccc;
+}
+.prevpro-name{
+ margin:0px; padding:7px 5px;
+ text-align:center; height:30px;
+ background: url("../img/upbg.jpg"); /* Для старых браузров */
+ background: linear-gradient(to top, #ddd, #eee);
+ border-radius:5px 5px 0px 0px; box-shadow: inset 0px 0px 1px #fff; border-bottom:1px solid #ccc;
+}
+.prevpro-name a{
+ text-decoration:none;
+ text-shadow:1px 1px 0px #eee;
+}
+.prevprobox:hover .prevpro-name{
+ background: #ddd; /* Для старых браузров */
+ background: linear-gradient(to top, #ccc, #ddd);
+}
+.prepro-price1{
+ float:left; width:39%; padding:5px; padding-left:10px;
+ text-decoration:line-through;
+}
+.prepro-price2{
+ float:right; width:39%; padding:5px; padding-left:20px;
+ background: #eee url("../img/label.png"); background-repeat:no-repeat;
+ background-position: 3% 50%;
+ color:#df0000; font-weight:bold;
+ text-shadow:1px 1px 0px #fff;
+}
+.prepro-price2 span{
+ color:#006097;
+}
+.prepro-pic{
+ text-align:center;
+ margin:0px; padding:0px;
+}
+.prepro-pic a {
+ text-decoration:none;
+}
+.prepro-pic a img{
+ border:0xp;
+ width:180px;
+ height:120px;
+}
+
+.goodsboxprice span{
+ color:#d60000;
+}
+
+.prepro-pic2{
+ float:left;
+ padding:0px;
+ margin:10px;
+ margin-right:25px;
+ width:150px;
+ height:220px;
+}
+.prepro-pic2 a img{
+ border:0xp;
+ width:140px;
+ height:180px;
+}
+
+.goodsbox{
+ width:100%;
+}
+.fullshopcont{
+ width:100%;
+}
+.fullshopcont ul{
+ list-style-type:none;
+}
+
+.goodsbox h2{
+ margin:5px;
+ margin-top:15px;
+}
+.fullshop-desc{
+ margin:0px;
+ padding:0px;
+ padding-top:7px;
+ padding-left:15px;
+}
+.gsnumb{
+ width:40px;
+ padding-left:3px;
+}
+.gsbp{
+ color:#df0000;
+ font-weight:bold;
+}
+.addcartbutton{
+ cursor:default;
+ width:160px;
+ padding:7px;
+ margin:0px;
+ background: linear-gradient(to top, #004c77, #006097);
+ border:1px solid #004c77;
+ color:#fff;
+ text-align:center;
+}
+.goodsboxprice{
+ font-weight:bold;
+ color:#df0000;
+}
+/*~~~~~*/
+/*cartlistbox*/
+.cartlistbox{
+ width:100%;
+}
+.cartlistbox table{
+ width:100%;
+}
+
+.cartlistbox table tr td{
+ border:1px dashed #ddd;
+ text-align:center;
+ padding:3px;
+ font-size:95%;
+ cursor:default;
+}
+.cartlistbox table tr:hover td{
+ background:#eee;
+}
+.cartlistbox table tr:first-child{
+ background:#ddd;
+}
+.cartlistbox table tr td:first-child{
+ text-align:left;
+}
+.cartlistbox table tr td.tdrico{
+ width:24px;
+}
+.cartlistbox table tr td.tdnumb{
+ width:80px;
+}
+/*~~~~~~~~~~~*/ 
+/*footer*/
+.footer{
+ display:table;
+ margin-left:auto; margin-right:auto;
+ width:980px;
+}
+.submenu{
+ margin-left:auto; margin-right:auto;
+ width:92%; padding:20px;
+ text-align:center; font-size:75%;
+}
+.znachki{
+ float:left; font-size:75%;
+}
+.stats{
+ float:right;
+}
+.copy{
+ width:100%;
+ margin-top:20px; margin-bottom:10px;
+ font-size:70%; text-align:center;
+}
+/*~~~~~*/
+		/* Darkbox */
+		.darkbox-frame {
+			position:fixed;
+			top:0;
+			left:0;
+			display:none;
+			overflow:hidden;
+			width:100%;
+			height:100%;
+			z-index:999;
+			}
+		.darkbox-frame-on {
+			display:block;
+			}
+
+		/* Shadow */
+		.darkbox-shadow {
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			background:#000;
+			opacity:0;
+			}
+
+		/* Canvas */
+		.darkbox-canvas {
+			position:absolute;
+			top:50%;
+			left:50%;
+			overflow:hidden;
+			margin:-40px 0 0 -40px;
+			width:80px;
+			height:80px;
+			background:#000 url("../img/spinner.gif") 50% 50% no-repeat;
+			-webkit-border-radius:15px;
+			-moz-border-radius:15px;
+			border-radius:15px;
+			opacity:.5;
+			}
+			.darkbox-canvas IMG {
+				display:block;
+				visibility:hidden;
+				}
+		.darkbox-canvas-load {
+			background-image:none;
+			-webkit-border-radius:0;
+			-moz-border-radius:0;
+			border-radius:0;
+			}
+		.darkbox-canvas-done {
+			overflow:visible;
+			opacity:1;
+			}
+			.darkbox-canvas-done IMG {
+				visibility:visible;
+				opacity:0;
+				}
+
+		/* Button */
+		.darkbox-button {
+			position:absolute;
+			top:-13px;
+			display:none;
+			width:30px;
+			height:30px;
+			background:url("../img/button.png") no-repeat;
+			cursor:pointer;
+			z-index:1;
+			}
+		.darkbox-button-on {
+			display:block;
+			}
+		.darkbox-button-left {
+			left:-16px;
+			}
+		.darkbox-button-right {
+			right:-16px;
+			}
+/*blackbox*/
+.blackbg {
+ display:none;
+ z-index:99;
+ position:fixed;
+ top:0%;
+ left:0%;
+ width:100%;
+ height:100%;
+ background:url("../img/black40.png");
+}
+.messbox{
+ position:relative;
+ margin-left:auto;
+ margin-right:auto;
+ margin-top:15%;
+ width:220px;
+ padding:20px;
+ font-size:85%;
+ text-align:center;
+ color:#444;
+ background: linear-gradient(to top, #d0d0d0, #e2e2e2);
+ border-radius:9px 9px 9px 9px;
+ border:1px solid #d0d0d0;
+ box-shadow:0px 0px 5px #666;
+ text-shadow:1px 1px 0px #eee;
+}
+.otzivi {
+ display:none;
+ z-index:99;
+ position:fixed;
+ top:0%;
+ left:0%;
+ width:100%;
+ height:100%;
+ background:url("../img/black40.png");
+}
+.messbox2{
+ position:relative;
+ margin-left:auto;
+ margin-right:auto;
+ margin-top:15%;
+ width:420px;
+ padding:20px;
+ font-size:85%;
+ text-align:center;
+ color:#444;
+ background: linear-gradient(to top, #d0d0d0, #e2e2e2);
+ border-radius:9px 9px 9px 9px;
+ border:1px solid #d0d0d0;
+ box-shadow:0px 0px 5px #666;
+ text-shadow:1px 1px 0px #eee;
+}
+/*~~~~~~~~*/
+/*miniprofile*/
+.autoboxbut{
+ color:#006097;
+ text-decoration:underline;
+ cursor:pointer;
+}
+.autoboxbut:hover{
+ color:#df0000;
+}
+.miniprofile-link {
+ text-align:center;
+ padding:4px;
+ padding-top:0px;
+}
+.miniprofile-autobox{
+ display:none;
+ margin-bottom:4px;
+}
+.miniprofile-autobox table{ 
+ width:170px;
+ margin-left:auto;
+ margin-right:auto;
+}
+ 
+.loginbut{
+ float:right;
+ cursor:default;
+ padding:5px;
+ padding-left:12px;
+ padding-right:12px;
+ margin:0px;
+ margin-right:5px; 
+ background: linear-gradient(to top, #004c77, #006097);
+ border:1px solid #004c77;
+ color:#fff;
+ text-align:center;
+}
+
+.regboxinfo{
+ width:600px; 
+ margin-left:auto;
+ margin-right:auto;
+ text-align:center;
+}
+.regbox{
+ width:300px;
+ margin-top:15px;
+ margin-left:auto;
+ margin-right:auto;
+}
+.regbox table{
+ margin-left:auto;
+ margin-right:auto;
+}
+.regbox table tr td{
+ color:#333;
+}
+.regbox table tr td span{
+ color:#df0000;
+}
+.regbox p{
+ font-size:90%;
+ margin:0px;
+ padding:4px;
+ text-align:center;
+}
+.regbox p span{
+ color:#df0000;
+}
+
+.goodsorm{
+ width:400px;
+ margin-left:auto;
+ margin-right:auto;
+}
+.goodsorm input[type=text]{
+ width:100%;
+}
+.goodsorm textarea{
+ width:100%;
+}
+/*~~~~~~~~~~~*/
+
+/*~~~~~~~Отзывы~~~~~~*/
+.reviews {
+ margin:0px;
+ margin-bottom:10px;
+ padding:0px;
+ border: 1px solid #ddd;
+ padding: 10px;
+ border-radius: 0px 3px 3px 3px;
+}
+.useravatar {
+padding:0px;
+margin:0px;
+float: left;
+}
+
+.reviewslist {
+padding:0px;
+margin:0px;
+display:table;
+}
+
+.commentbox, .commentboxadd{
+ border:1px solid #ddd; width:100%;
+ margin-bottom:10px; display:table;
+}
+.commentbox table, .commentboxadd table{
+ border-spacing:0px;
+ width:100%;
+}
+.commentbox table tr td{
+ vertical-align:top;
+ text-align:left;
+}
+.commentbox table tr td:first-child{
+ text-align:center;
+ width:80px;
+}
+.commentboxadd table tr td:first-child{
+ text-align:left;
+ width:100%;
+}
+.title-commentbox{
+ display:table; width:100%;
+ background:linear-gradient( to top, #ddd, #dfdfdf);
+}
+.title-commentbox, .title-commentboxadd{
+ padding:4px;
+ background:linear-gradient( to top, #ddd, #dfdfdf);
+}
+.vis-rating{
+ margin:0px; padding:4px;
+ float:right;
+}
+.id-name-commentbox{
+ margin:0px; padding:4px;
+ float:left;
+}
+.avatar-commentbox{
+ padding:3px; margin:0px;
+ width:75px; height:75px;
+}
+.avatar-commentbox img{
+ width:75px; height:75px;
+}
+.cont-commentbox{
+ margin:0px; padding:4px; margin-bottom:3px; margin-top:2px;
+ border:1px solid #ddd;
+ border-radius:3px 3px 3px 3px;
+}
+.cont-commentbox textarea{
+ width:816px;
+}
+.ccbg1{
+ background:#f8f8f8;
+}
+.ccbg2{
+ background:#fefefe;
+}
+.date-comment{
+ margin:0px; padding:4px;
+ background:#fdfdfd; color:#aaa;
+ border:1px solid #ddd;
+ border-radius:3px 3px 3px 3px;
+}
+.addpostrev{
+ float:right;
+ cursor:default;
+ width:160px;
+ padding:7px;
+ margin:4px; margin-top:0px;
+ background: linear-gradient(to top, #004c77, #006097);
+ border:1px solid #004c77;
+ color:#fff;
+ text-align:center;
+}
+
+#vis-rating-hover{
+ width:80px;height:16px;
+}
+#vis-rating-panel{
+ float:left; width:80px;height:16px;
+}
+.addrating0{
+ background:none;
+}
+.addrating1{
+ background:url('../img/rating/1.png');
+}
+.addrating2{
+ background:url('../img/rating/2.png');
+}
+.addrating3{
+ background:url('../img/rating/3.png');
+}
+.addrating4{
+ background:url('../img/rating/4.png');
+}
+.addrating5{
+ background:url('../img/rating/5.png');
+}
+
+#vis-rating-hover p{
+ float:left; padding:0px; margin:0px;
+ width:16px; height:16px; cursor:pointer;
+}
+#vis-rating-hover p:hover{
+ background:url('../img/rating/hover.png');
+}

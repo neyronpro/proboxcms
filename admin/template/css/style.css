@@ -1,0 +1,418 @@
+body{
+ padding:10px;
+ margin:0px;
+ background: url("../images/linen.jpg");
+ font-family:Verdana;
+ font-size:1em;
+ color:#333;
+}
+
+input{
+ outline:none;
+}
+
+img{
+ border:0px;
+}
+
+a {
+ color:#0076ef;
+ text-decoration:none;
+}
+a:hover {
+ color:#d00000;
+}
+
+.glbox{
+ background: linear-gradient(to top, #f1f1f1, #fafafa);
+ border:1px solid #ccc;
+ border-radius:1px 1px 1px 1px;
+ box-shadow:inset 0px 0px 0px 1px #fafafa;
+}
+
+
+/*autorization*/
+.loginform{
+ margin-top:10%;
+ margin-left:auto;
+ margin-right:auto;
+ width:496px;
+ padding:20px;
+ display:table;
+ font-size:85%;
+}
+.loginform div{
+ float:left;
+ width:248px;
+ padding-top:20px;
+}
+
+.loginform div p{
+ padding:0px;
+ margin:0px;
+ margin-bottom:5px;
+ color:#aaa;
+}
+.loginform div p span{
+ color:#0076ef;
+}
+.loginform div:first-child{
+ margin:0px;
+ padding:0px;
+}
+.loginform div:first-child p:first-child{
+ width:228px;
+ height:228px;
+ margin:0px;
+ padding:0px;
+}
+
+.loginform div:last-child{
+ width:100%;
+ text-align:center;
+ padding:0px;
+}
+
+.loginform div:last-child p{
+ font-size:80%;
+ text-align:center;
+ margin:0px;
+ padding:0px;
+ padding-top:10px;
+ margin-top:-30px;
+ border-top:1px solid #ddd;
+}
+.loginform div:last-child p a{
+ text-decoration:none;
+}
+.forgot-password{
+ font-size:80%;
+}
+input[type=text], input[type=password]{
+ border-radius:1px 1px 1px 1px;
+ border:1px solid #e5e5e5;
+ background: #eaeaea;
+ padding:5px;
+ color:#777;
+ box-shadow:inset 0px 0px 0px 1px #fafafa;
+}
+.loginform input[type=text], .loginform input[type=password]{
+ width:100%;
+ font-size:125%;
+ padding:2%;
+ font-weight:bold;
+}
+input[type=text]:focus, input[type=password]:focus{
+ background: #ddd;
+}
+.pabut{
+ border-radius:1px 1px 1px 1px;
+ border:1px solid #0076ef;
+ background: #0076ef;
+ background: linear-gradient(to top, #0076ef, #3a99fb);
+ color:#fff;
+ box-shadow:inset 0px 0px 0px 1px #3097ff;
+ text-shadow:-1px -1px 0px #0067d0;
+}
+.pabut{
+ padding:4px 14px 4px 14px;
+}
+.pabut:hover{
+ background: #0067d0;
+ background: linear-gradient(to top, #0067d0, #0076ef);
+}
+.pabut:active{
+ box-shadow:inset 0px 0px 4px 1px #0067d0;
+}
+/*~~~~~~~~~~~~*/
+
+/*head*/
+.headbox{
+ margin-left:auto;
+ margin-right:auto;
+ width:99%;
+ height:60px;
+ display:table;
+ font-size:85%;
+}
+.logo{
+ float:left;
+ height:60px;
+ width:250px; 
+ border-right:1px solid #ccc; 
+}
+.logo img{
+ height:60px;
+ width:250px;  
+}
+
+.hotheadbox{
+ height:60px;
+ width:100%;
+ text-shadow:1px 1px 0px #fff; 
+ color:#666;
+}
+.hotheadbox span{
+ color:#333;
+}
+.hhbox-blok1{
+ display:table;
+ float:left;  
+ padding:5px;
+ padding-right:20px;
+ height:50px;
+ border-left:1px solid #fafafa;
+}
+.hhbox-blok2, .hhbox-blok3{
+ display:table;
+ float:right;  
+ padding:5px;
+ padding-right:20px;
+ height:50px;
+ border-left:1px solid #ccc;
+ box-shadow:inset 0px 0px 0px 1px #fafafa;
+}
+.hotheadbox p{
+ padding:0px;
+ padding-left:2px;
+ padding-bottom:2px;
+ margin:0px;
+ font-size:80%;
+}
+/*~~~~*/
+/*bodybox*/
+.bodybox{
+ margin-top:5px;
+ margin-left:auto;
+ margin-right:auto;
+ width:99%;
+ display:table;
+ font-size:80%;
+}
+.leftbox{ 
+ float:left;
+ width:24%;
+}
+
+.centerbox{
+ float:right;
+ width:74.9%;
+ margin-left:7px;
+}
+/*~~~~~~~*/
+/*Modlist*/
+.box-title{
+ margin:5px;
+ text-align:center;
+ padding-top:5px;
+ padding-bottom:5px;
+ border:1px solid #ccc;
+ background: #ccc;
+ color:#666;
+ box-shadow:inset 0px 0px 0px 1px #d1d1d1;
+ text-shadow:1px 1px 0px #ccc;
+}
+
+.modlist{
+ width:100%;
+ display:table;
+}
+.modlist-active, .modlist-noactive{
+ margin:5px;
+}
+.modlist-noactive{
+ display:none;
+}
+.modlist-linkmod a p{
+ margin:0px;
+ padding:5px;
+ padding-left:12px; 
+ border-bottom:1px solid #ccc; 
+ box-shadow:inset 0px 0px 0px 1px #fafafa;
+ text-shadow:1px 1px 0px #fff;
+}
+.modlist-linkmod a:last-child p{
+ border:0px; 
+}
+.modlist-linkmod a:hover p{
+ background:#eaeaea; 
+ box-shadow:inset 0px 0px 0px 1px #eaeaea;
+ text-shadow:none;
+}
+
+.mlbut-active, .mlbut-noactive{ 
+ margin-bottom:5px;    
+ margin-left:6px;
+ margin-top:-5px;
+ float:left;
+ padding:2% 3% 2% 3%;
+ font-size:80%;
+ cursor:pointer; 
+ color:#666;
+ background: #ccc;                 
+ text-shadow:1px 1px 0px #ccc;
+}
+.mlbut-noactive{
+ opacity:0.6;
+}
+/*~~~~~~~*/
+/*contentbox*/
+.contentbox{
+ margin:5px;
+}
+/*~~~~~~~~~~*/
+/*psevdoselect*/
+.catselectbox{  
+ z-index:2;
+ position:relative;
+ width:236px;
+ height:24px; 
+ margin-bottom:4px;
+}
+.catlist{
+ display:none;
+ position:absolute;
+ top:29px;
+ left:0px;
+ background:#fff;
+ width:234px;
+ height:160px;
+ overflow-y:auto;
+ border:1px solid #ccc;
+}
+.catlist ul{
+ list-style-type:none;
+ padding:0px;
+ margin:0px;
+}
+.catlist ul li{
+ padding:0px;
+ margin:0px;
+ margin-left:3%;
+ border-top:1px dashed #eee;
+}
+.catlist ul:first-child li:first-child{
+ border-top:0px;
+}
+.catlist ul li:first-child{
+ margin:0px;
+}
+.catlist ul li ul{
+ padding:0px;
+ margin:0px;
+ margin-left:6%;
+}
+.catlist ul li p{
+ cursor:default;
+ margin:0px;
+ padding:4px;
+}
+.catlist ul li p:hover{
+ background:#0067d0;
+ color:#fff;
+}
+.catlist ul li ul li p{ 
+ background:url('../images/noactive.png');
+ background-repeat:no-repeat;
+ background-position:0% 50%;
+ background-size:auto 50%;
+ color:#666;
+ text-decoration:line-through;
+ padding-left:14px;
+}
+.catlist ul li ul li p:hover{
+ background:url('../images/noactive.png');
+ background-repeat:no-repeat;
+ background-position:0% 50%;
+ background-size:auto 50%;
+ color:#666;
+}
+.catnoactive{
+}
+.csbnamecatbut{
+ border-radius:1px 1px 1px 1px;
+ border:1px solid #e5e5e5;
+ padding:3%;
+ padding-right:16px;
+ width:212px;
+ color:#777;
+ box-shadow:inset 0px 0px 0px 1px #fafafa;
+ background:#eaeaea url('../images/arrlist.png');
+ background-repeat:no-repeat;
+ background-position:100% 50%;
+ cursor:default; 
+}
+/*~~~~~~~~~~~~*/
+/*cont-box*/
+.cont-headbox{
+ width:100%;
+}
+
+.patablebox{
+ width:100%;
+ font-size:90%;
+ border-spacing:3px;
+}
+.patablebox tr td{
+ padding:3px;
+}
+.patablebox tr td:first-child{
+ vertical-align:top;
+ padding-left:7px;
+ color:#666;
+ width:200px;
+}
+.patablebox tr td{
+ background:#fafafa;
+ border:1px dashed #f1f1f1;
+}
+.patablebox tr.even td{
+ background:#fff;
+}
+.patablebox tr td textarea{
+ width:100%;
+}
+.patablebox tr td input{
+ width:237px;
+}
+/*~~~~~~~~*/
+
+/*catlistmodule*/
+.catlistbox{
+ position:relative;
+ height:24px;
+ display:block;
+ margin-bottom:3px;
+}
+.catlistbox p{
+ margin:0px;
+ padding:4px; 
+}
+.csboxid, .csboxname{
+ float:left;
+}
+.cseditbut, .csdelbut{
+ float:right;
+}
+.cslvl1{
+ margin-left:0px;
+}
+.cslvl2{
+ margin-left:30px;
+}
+.cslvl3{
+ margin-left:60px;
+}
+.cslist-arr{
+ position:absolute;
+ top:0px;
+ left:-30px;
+ padding:4px;
+ margin:0px;
+ width:30px;
+ background:url('../images/cslist-arr.png');
+ background-repeat:no-repeat;
+ background-position:0px -3px;
+ opacity:0.6;
+}
+/*~~~~~~~~~~~~~*/

@@ -1,0 +1,37 @@
+
+<div class="cartlistbox">
+<table>
+	<tr>
+		<td>Наименование товара</td><td class="tdnumb">Кол-во</td>
+		<td class="tdnumb">На сумму</td><td class="tdrico">&nbsp;</td>
+		<td class="tdrico">&nbsp;</td> 
+	</tr>
+
+[goods_cart]
+
+	<tr %atr_goods%><td>%titlecart%</td>
+		<td>%countcart%</td><td class="tdnumb">%costcart%</td>
+		<td><a href="%previmg%" class="darkbox" target="_blank" alt="Посмотреть изображение товара"><img alt="Посмотреть изображение товара" src="/template/Default/img/eye.png"></a></td>
+		<td><img %atr_delete% alt="Удалить товар из корзины" src="/template/Default/proboximg/delico.png" style="cursor:pointer;"></td>
+	</tr>
+[/goods_cart]
+
+	
+</table></div>
+
+
+[cart_form]
+<span style="color:#df0000;font-weight:bold;">(!)</span> Товары с суммой 0 уточняются поставщиком после совершения заказа.<br /><br />
+<span style="color:#333;">В корзине всего товаров: <b>%cartboxtotal%</b> шт.<br />На сумму: <b>%cartboxsum%</b> руб.</span><br />
+<h2 style="padding:5px;margin:4px;text-align:center;">Оформление заказа:</h2>
+<table class="goodsorm">
+ <tr><td><span style="color:#df0000;">*</span>Ф.И.О:</td><td>%fio%</td></tr>
+ <tr><td><span style="color:#df0000;">*</span>Телефон:</td><td>%phone%</td></tr>
+ <tr><td><span style="color:#df0000;">*</span>Емейл:</td><td>%email%</td></tr>
+</table>
+<table class="goodsorm">
+ <tr><td><span style="color:#df0000;">*</span>Адрес доставки:<br />%deliv%</td></tr>
+ <tr><td><span style="color:#df0000;">*</span>Комментарий к заказу:<br />%comment%</td></tr>
+ <tr><td><input class="loginbut" type="submit" name="order" value="Заказать"></td></tr>
+</table>
+[/cart_form]

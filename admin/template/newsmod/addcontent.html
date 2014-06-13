@@ -1,0 +1,36 @@
+%addname%:<br />
+<div class="cont-headbox">
+<form name="content" action="%link%" method="POST" enctype="multipart/form-data">
+<div><input type="hidden" name="module" value="%mod%" ></div> 
+<div><input type="hidden" name="id" value="%id%" ></div>
+<table class="patablebox">
+ <tr><td>Название:</td><td><input type="text" name="name"  value="%name%"></td></tr>
+ <tr class="even"><td>Название на английском:</td><td><input type="text"  name="altname" value="%altname%"></td></tr>
+ <tr><td>Автор</td><td><input type="text"  name="author" value="%author%" maxlength="30"></td></tr>
+ <tr><td>Описание(description):</td><td><input type="text"  name="description" value="%description%" maxlength="180"></td></tr>
+ <tr class="even"><td>Ключевые слова(keywords):</td><td><input type="text" name="keywords" value="%keywords%"></td></tr>
+ <tr>
+  <td>Родительская категория:</td>
+  <td>
+   <!--psevdoselect-->
+   <div class="catselectbox">
+    <input type="hidden" name="catselect" value="%catid%">
+    <div class="csbnamecatbut">Нет родительской категории</div>
+    <div class="catlist">
+     <ul><li><p id="pic0" class="catactive">Нет родительской категории</p></li></ul>
+     %cat%
+    </div>
+   </div> 
+   <!--/psevdoselect-->
+  </td>
+ </tr>
+ <tr class="even"><td>Краткое содержание:</td><td><textarea  name="shortcont"  >%shortcont%</textarea></td></tr>
+ <tr><td>Полное содержание:</td><td><textarea  name="fullcont" >%fullcont%</textarea></td></tr>
+%previmg% 
+</table>
+
+
+
+<input class="pabut" type="submit" name="%but_action%" value="%butval%">
+</form>
+</div>

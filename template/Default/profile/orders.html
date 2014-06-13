@@ -1,0 +1,65 @@
+[orders_head]
+Список заказов:
+<table class="conttableinfo" width="100%" > 
+	<tr class="ctitrfirst">
+		<td>№</td>
+		<td>Фио</td>
+		<td>Контакты</td>
+		<td>Адрес</td> 
+		<td>Комментарий</td>
+		<td>Сумма</td>
+		<td>Товары</td>
+	
+	</tr>
+
+[/orders_head]
+
+
+[orders_list]
+
+<tr >
+		<td>%numb_order%</td>
+		<td>%fnm%</td>
+		<td>%contacts%</td>
+		<td>%adress%</td>
+		<td>%comment%</td>
+		<td>%fullcost%</td>
+		<td>%show%</td>
+	
+	</tr>
+
+[/orders_list]
+
+
+
+[orders_bottom]
+</table>
+[/orders_bottom]
+[goodslist_head]
+Заказ №%numb_order% <br />
+Список товаров:<table class="conttableinfo" width="100%" > 
+	<tr class="ctitrfirst">
+		<td>Название</td>
+		<td>Кол-во</td>
+		<td>Стоимость</td>
+		<td>Артикул</td> 
+	</tr>
+[/goodslist_head]
+
+[goodslist_body]
+<tr>
+		<td>%goodsname%</td>
+		<td>%count%</td>
+		<td>%cost%</td>
+		<td>%article%</td>
+</tr>
+
+
+
+[/goodslist_body]
+
+
+[goodslist_bottom]
+</table>
+
+[/goodslist_bottom]
